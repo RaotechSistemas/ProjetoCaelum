@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+p{
+     text-align: left;  /* Alinhamento do texto - left, right, justify */
+   /* line-height: 5px; - tamanho da altura de cada linha 
+    letter-spacing: 3px; - tamanho do espaço entre cada letra 
+    word-spacing: 5px; - tamanho do espaço entre cada palavra 
+    text-indent: 30px; - tamanho da margem da primeira lina do texto */*
+}
+h1{
+    background-image: url(sobre-background.jpg);
+}
