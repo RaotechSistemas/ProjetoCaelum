@@ -1,16 +1,4 @@
 body {
-    
-/* color: #3366ff; - Definindo cor pela notação hexadecimal */
-/* color: #36f; Definindo cor pela notação hexadecimal na forma resumida*/
-/* color: red; - Definindo cor pelo nome */
-/* color: rgb (255, 200, 0) Definindo cor pelo valor RGB */
-/* color: rgba (255, 200, 0, 0.616) Definindo cor pelo valor RGBA (com transparencia */
-
-/* font-family: Arial, Helvetica, sans-serif;
-    border-color: red;
-    border-width: 1px;
-    border: 1px solid red; - versão Shorthand 
-    border-style:solid; - tipos de bordas: solid, dashed, dotted, double, groove, etc */
 
     color: #333;
     font-family: 'Lucida Sans Unicode', 'Lucita Grande', sans-serif;
@@ -22,7 +10,12 @@ body {
   
 }
 
-p {
+img{
+    width: inherit;
+    height: inherit;
+}
+
+.main-sobre p {
      text-align: left;  /* Alinhamento do texto - left, right, justify */
      padding: 0 45px;
      text-indent: 15px;
@@ -32,23 +25,27 @@ p {
     word-spacing: 5px; - tamanho do espaço entre cada palavra 
     text-indent: 30px; - tamanho da margem da primeira lina do texto */
 }
-h1 {
+
+.main-sobre h1 {
     background-image: url(sobre-background.jpg);
     padding: 10px;
 }
-h2 {
+
+.main-sobre h2 {
     border-bottom: 2px solid #333;
     margin-top: 30px;
 
 }
-figure {
+
+.main-sobre figure {
     background-color: #f2eded;
     border: 1px solid #ccc;
     text-align: center;
     padding: 15px;
     margin: 30px;
 }
-figcaption {
+
+.main-sobre figcaption {
     font-style: italic;
     margin-top: 10px;
  }
@@ -58,21 +55,25 @@ figcaption {
      margin-right: auto;
      width: 550px;
  }
+
  #rodape {
      color: #777;
      margin: 30px 0;
      padding: 30px 0;
  }
+
  #rodape img {
      margin-right: 30px;
      vertical-align: middle;
      width: 94px;
  }
+
  #familia-pelho {
      float:right;
      margin: 0 0 10px 10px;
  }
- .sacola {
+
+ .main-index .sacola {
     background-image: url(sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -85,29 +86,91 @@ figcaption {
     top: 0;
     right: 0;
  }
- .menu-opcoes {
+
+  .menu-opcoes {
      position: absolute;
      bottom: 0;
      right: 0;
  }
- .menu-opcoes ul{
+
+  .menu-opcoes ul{
      font-size: 15px;
 
  }
- .menu-opcoes a {
+
+  .menu-opcoes a {
      color: #036;
  }
- .menu-opcoes ul li {
+
+  .menu-opcoes ul li {
      display: inline;
      margin-left: 20px;
  }
- li{
-     display:inline;
- }
-.container {
+ 
+ .main-sobre .container {
     margin: 0 auto;
     width: 940px;
 }
+
 header {
     position:relative;
 }
+
+ .busca, 
+.menu-departamentos {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+    display:block;
+    float: left;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+
+}
+
+.busca input [type="search"] {
+    float:left;
+    width: 50px;
+}
+
+.menu-departamentos {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    clear:left;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.destaque{
+    margin-top: 10px;
+}
+
+#botao {
+    height:auto;
+    width: 10%;
+    background-image:url(busca.png);
+    text-indent: -999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #dcdcdc;
+    border-style: none;
+    
+    
+}
+
+
