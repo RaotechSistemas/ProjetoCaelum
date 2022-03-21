@@ -56,16 +56,56 @@ img{
      width: 550px;
  }
 
- #rodape {
-     color: #777;
+ footer {
+     
+     color: #dcdcdc;
      margin: 30px 0;
-     padding: 30px 0;
- }
+     padding: 20px 0;
+     background-color: #333;
+     clear: both;
+}
+footer .container{
+    position:relative;
+}
+.social a{
+    height:32px;
+    width:32px;
+    display: block;
+    text-indent: -9999px;
+}
 
- #rodape img {
+.social{
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social a[href*="facebook.com"]{
+    background-image: url(facebook.png);
+}
+  
+.social a[href*="twitter.com"]{
+    background-image: url(twitter.png);
+}   
+
+.social a[href*="instagran.com"]{
+    background-image: url(googleplus.png);
+} 
+
+.social li{
+    float: left;
+    margin: 0px 10px;
+    
+}
+
+
+ footer img {
      margin-right: 30px;
      vertical-align: middle;
      width: 94px;
+     background-color: #333;
+     padding-left: 10px;
+     
  }
 
  #familia-pelho {
@@ -119,6 +159,7 @@ img{
 
 header {
     position:relative;
+    
 }
 
  .busca, 
