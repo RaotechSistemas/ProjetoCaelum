@@ -104,7 +104,12 @@ img{
 
   .menu-opcoes ul li {
      display: inline;
-     margin-left: 20px;
+     margin-left: 1px;
+     border-style: solid;
+     margin-bottom: 1px;
+     padding: 5px 10px;
+     font-weight: bold;
+     text-transform: uppercase;
  }
  
  .main-sobre .container {
@@ -125,6 +130,8 @@ header {
     width: 230px;
     display:block;
     float: left;
+    text-decoration: none;
+    
 }
 
 .busca h2,
