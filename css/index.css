@@ -76,7 +76,7 @@ footer .container{
 
 .social{
     position: absolute;
-    top: 12px;
+    top: 10%;
     right: 0;
 }
 
@@ -88,8 +88,9 @@ footer .container{
     background-image: url(twitter.png);
 }   
 
-.social a[href*="instagran.com"]{
-    background-image: url(googleplus.png);
+.social a[href*="instagram.com"]{
+    background-image: url(instagram.png);
+    
 } 
 
 .social li{
@@ -151,6 +152,13 @@ footer .container{
      font-weight: bold;
      text-transform: uppercase;
  }
+
+ .menu-opcoes a:hover{
+     color:#007dc6;
+ }
+ .menu-opcoes a:active{
+     color: #867dc6;
+ }
  
  .main-sobre .container {
     margin: 0 auto;
@@ -203,22 +211,45 @@ header {
     color: #333333;
     text-decoration: none;
 }
+.menu-departamentos li ul{
+    display: none;
+}
+.menu-departamentos li:hover ul{
+    display: block;
+}
+.menu-departamentos ul ul li {
+    background-color: #dcdcdc;
+}
+ .menu-departamentos li li a:before {
+     content: '-  ';
+     /* lista com mais simbolos UNICODE e seus respectivos códigos hexadecimais*/
+     /*https://www.alanwood.net/unicode/dingbats.html*/
+     /*https://www.alanwood.net/unicode/#links*/
+ }
 
 .destaque{
     margin-top: 10px;
 }
 
 #botao {
-    height:auto;
-    width: 10%;
+    
     background-image:url(busca.png);
-    text-indent: -999px;
     background-repeat: no-repeat;
+    border-style: none;
     background-position: center;
     background-color: #dcdcdc;
-    border-style: none;
-    
-    
+    text-indent: -999px;    
+    height:auto;
+    width: 10%;
+}
+.main-sobre p::first-letter{
+    font-weight: bold;
 }
 
-
+.main-sobre h1 + p{
+    text-indent: 0;
+}
+.main-sobre p::first-line{
+    font-variant: small-caps;
+}
+   
