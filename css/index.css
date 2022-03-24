@@ -17,7 +17,7 @@ img{
     height: inherit;
 }
 
-.main-sobre p {
+p {
      text-align: left;  /* Alinhamento do texto - left, right, justify */
      padding: 0 45px;
      text-indent: 15px;
@@ -27,18 +27,17 @@ img{
     word-spacing: 5px; - tamanho do espaço entre cada palavra 
     text-indent: 30px; - tamanho da margem da primeira linha do texto */
 }
-.main-sobre p::first-letter {
+p::first-letter {
     font-weight: bold;
-    font;
     /*Mudando apenas a 1ª letra do parágrafo*/
 }
 
-.main-sobre .diferencial h2{
+.diferencial h2{
     font-weight: bold;
     text-transform: uppercase;
   
 }
-.main-sobre .diferencial  ul {
+.diferencial  ul {
 
      display: inline-block;
      border-style: solid;
@@ -49,31 +48,33 @@ img{
      line-height: 25px; 
 }    
 
-
-
-.main-sobre p::first-line{
+p::first-line{
     text-indent: 15px;
 /* -- Alterar 1ª linha-- */   
 }
 
 
-.main-sobre :not(p) + p::first-line{
+:not(p) + p::first-line{
     text-indent: 15px;
  /*--Alterar apenas a 1ª linha dos parágrafos--*/   
 }
 
-.main-sobre h1 {
+h1 {
     background-image: url(sobre-background.jpg);
     padding: 10px;
 }
 
-.main-sobre h2 {
+h2 {
     border-bottom: 2px solid #333;
     margin-top: 30px;
 
 }
+.busca h2,
+.menu-departamentos h2{
+    border:none;
+}
 
-.main-sobre figure {
+figure {
     background-color: #f2eded;
     border: 1px solid #ccc;
     text-align: center;
@@ -81,7 +82,7 @@ img{
     margin: 30px;
 }
 
-.main-sobre figcaption {
+figcaption {
     font-style: italic;
     margin-top: 10px;
  }
@@ -153,7 +154,7 @@ footer .container{
      margin: 0 0 10px 10px;
  }
 
- .main-index .sacola {
+.sacola {
     background-image: url(sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -277,8 +278,9 @@ header {
      /*https://www.alanwood.net/unicode/#links*/
  }
 
-.destaque{
-    margin-top: 10px;
+.banner-destaque img{
+    margin-right: 0;
+        width: 100%;
 }
 
 #botao {
@@ -349,7 +351,7 @@ header {
         font-size: 16px;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 939px) {
     body {
         font-size: 12px;
     }
