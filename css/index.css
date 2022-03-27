@@ -10,10 +10,7 @@ body {
   
 }
 
-img{
-    width: inherit;
-    height: inherit;
-}
+
 
 .main-sobre p {
      text-align: left;  /* Alinhamento do texto - left, right, justify */
@@ -328,4 +325,55 @@ header {
     text-align: center;
     text-decoration: none;
 }
+@media screen {
+    body {
+        font-size: 16px;
+        margin: auto;
+    }
+       
+}
 
+@media (max-width:939px) {
+    body {
+        font-size: 12px;
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header h1 img {
+        max-width: 50%;
+    }
+    .sacola {
+        display: none;
+    }
+    .menu-opcoes {
+        position: static;
+        text-align: center;
+    }
+    .menu-opcoes ul li{
+        display: inline-block;
+        margin: 5px;
+    }
+    .busca,
+    .menu-departamentos,
+    .banner-destaque img {
+        margin-right: 0;
+        width: 100%;
+    }
+    .painel {
+        width: auto;
+    }
+    .painel li {
+        width: 30%;
+    }
+    .painel img {
+        width: 100%;
+    }
+}
