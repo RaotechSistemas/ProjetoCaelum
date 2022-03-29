@@ -1,18 +1,53 @@
+/* Configurações globais */
+@charset "UTF-8";
+/* Configurações gerais */
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
 body {
 
     color: #333;
     font-family: 'Lucida Sans Unicode', 'Lucita Grande', sans-serif;
     padding: 10px; /* padding-top, padding-right, padding-bottom, padding-left */
-    margin-left: auto;
-    margin-right: auto;
-    width: 940px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 940px;
 
-  
+}
+
+header {
+    position:relative;
 }
 
 
+footer {
+    color: #dcdcdc;
+    margin: 30px 0;
+    padding: 20px 0;
+    background-color: #333;
+    clear: both;
+}
 
-.main-sobre p {
+footer .container{
+    position:relative;
+}
+
+footer img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+    background-color: #333;
+    padding-left: 10px;
+    
+    
+}
+
+/* Configurações da página "SOBRE" */
+
+#sobre p {
      text-align: left;  /* Alinhamento do texto - left, right, justify */
      padding: 0 45px;
      text-indent: 15px;
@@ -22,39 +57,27 @@ body {
     word-spacing: 5px; - tamanho do espaço entre cada palavra 
     text-indent: 30px; - tamanho da margem da primeira lina do texto */
 }
-.main-sobre p::first-letter {
+#sobre p::first-letter {
     font-weight: bold;
     /*Mudando apenas a 1ª letra do parágrafo*/
 }
 
-.main-sobre h1 + p {
+#sobre h1 + p {
     text-indent: 0;
 }
-/* -- Alterar 1ª linha--
 
-.main-sobre p::first-line{
-    font-variant: small-caps;
-    
-}
---Alterar apenas a 1ª linha dos parágrafos--
-
-.main-sobre :not(p) + p::first-line{
-    font-variant: small-caps;
-    
-*/
-
-.main-sobre h1 {
+#sobre h1 {
     background-image: url(sobre-background.jpg);
     padding: 10px;
 }
 
-.main-sobre h2 {
+#sobre h2 {
     border-bottom: 2px solid #333;
     margin-top: 30px;
 
 }
 
-.main-sobre figure {
+#sobre figure {
     background-color: #f2eded;
     border: 1px solid #ccc;
     text-align: center;
@@ -62,79 +85,56 @@ body {
     margin: 30px;
 }
 
-.main-sobre figcaption {
+#sobre figcaption {
     font-style: italic;
     margin-top: 10px;
  }
 
- #centro-distribuicao {
+ #sobre #centro-distribuicao {
      margin-left: auto;
      margin-right: auto;
      width: 550px;
  }
 
- footer {
-     
-     color: #dcdcdc;
-     margin: 30px 0;
-     padding: 20px 0;
-     background-color: #333;
-     clear: both;
-     
-    
-}
-footer .container{
-    position:relative;
-}
-.social a{
+/* Configurações da página INDEX */
+
+#index .social a{
     height:32px;
     width:32px;
     display: block;
     text-indent: -9999px;
 }
 
-.social{
+#index .social{
     position: absolute;
     top: 10%;
     right: 0;
 }
 
-.social a[href*="facebook.com"]{
+#index .social a[href*="facebook.com"]{
     background-image: url(facebook.png);
 }
   
-.social a[href*="twitter.com"]{
+#index .social a[href*="twitter.com"]{
     background-image: url(twitter.png);
 }   
 
-.social a[href*="instagram.com"]{
+#index .social a[href*="instagram.com"]{
     background-image: url(instagram.png);
     
 } 
 
-.social li{
+#index .social li{
     float: left;
     margin: 0px 10px;
-    
 }
 
+#sobre .familia-pelho {
+    float:right;
+    margin: 0 0 10px 10px;
+}
 
- footer img {
-     margin-right: 30px;
-     vertical-align: middle;
-     width: 94px;
-     background-color: #333;
-     padding-left: 10px;
-     
-     
- }
-
- #familia-pelho {
-     float:right;
-     margin: 0 0 10px 10px;
- }
-
- .main-index .sacola {
+#index .sacola {
     background-image: url(sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -146,53 +146,48 @@ footer .container{
     position:absolute;
     top: 0;
     right: 0;
- }
+}
 
-  .menu-opcoes {
-     position: absolute;
-     bottom: 0;
-     right: 0;
- }
+#index .menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
-  .menu-opcoes ul{
-     font-size: 15px;
+#index .menu-opcoes ul{
+    font-size: 15px;
 
- }
+}
 
-  .menu-opcoes a {
-     color: #036;
-     text-decoration: none;
- }
+#index .menu-opcoes a {
+    color: #036;
+    text-decoration: none;
+}
 
-  .menu-opcoes ul li {
-     display: inline;
-     margin-left: 1px;
-     border-style: solid;
-     margin-bottom: 1px;
-     padding: 5px 10px;
-     font-weight: bold;
-     text-transform: uppercase;
- }
+#index .menu-opcoes ul li {
+    display: inline;
+    margin-left: 1px;
+    border-style: solid;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
- .menu-opcoes a:hover{
-     color:#007dc6;
- }
- .menu-opcoes a:active{
-     color: #867dc6;
- }
- 
- .main-sobre .container {
+#index .menu-opcoes a:hover{
+    color:#007dc6;
+}
+#index .menu-opcoes a:active{
+    color: #867dc6;
+}
+
+#index .main-sobre .container {
     margin: 0 auto;
     width: 940px;
 }
 
-header {
-    position:relative;
-    
-}
-
- .busca, 
-.menu-departamentos {
+#index .busca, 
+#index .menu-departamentos {
     background-color: #dcdcdc;
     font-weight: bold;
     text-transform: uppercase;
@@ -203,7 +198,7 @@ header {
     text-decoration: none;
     
 }
-.busca {
+#index .busca {
     /* O border-radius pode ser aplicado separadamente, em cada canto do objeto */
     border-top-left-radius: 4px; /* Canto supeior esquerdo*/
     border-bottom-left-radius: 5px; /* Canto inferior esquerdo*/
@@ -214,55 +209,51 @@ header {
     border-radius: 4px 5px 10px 15px */
 }
 
-.busca h2,
-.busca form,
-.menu-departamentos h2 {
+#index .busca h2,
+#index .busca form,
+#index .departamentos h2 {
     margin: 10px;
 
 }
 
-.busca input [type="search"] {
+#index .busca input [type="search"] {
     float:left;
     width: 50px;
 }
 
-.menu-departamentos {
+#index .departamentos {
     margin-top: 10px;
     padding-bottom: 10px;
     clear:left;
 }
 
-.menu-departamentos li {
+#index .departamentos li {
     background-color: white;
     margin-bottom: 1px;
     padding: 5px 10px;
 }
 
-.menu-departamentos a{
+#index .departamentos a{
     color: #333333;
     text-decoration: none;
 }
-.menu-departamentos li ul{
+#index .departamentos li ul{
     display: none;
 }
-.menu-departamentos li:hover ul{
+#index .departamentos li:hover ul{
     display: block;
 }
-.menu-departamentos ul ul li {
+#index .departamentos ul ul li {
     background-color: #dcdcdc;
 }
- .menu-departamentos li li a:before {
-     content: '-  ';
-     /* lista com mais simbolos UNICODE e seus respectivos códigos hexadecimais*/
-     /*https://www.alanwood.net/unicode/dingbats.html*/
-     /*https://www.alanwood.net/unicode/#links*/
- }
-
-.destaque{
+#index .departamentos li li a:before {
+    content: '-  ';
+}    
+#index .destaque{
     margin-top: 10px;
 }
 
-#botao {
+#index .botao-busca {
     
     background-image:url(busca.png);
     background-repeat: no-repeat;
@@ -274,24 +265,24 @@ header {
     width: 10%;
 }
 
-.painel {
+#index .painel {
     margin: 10px 0;
     padding: 10px;
     width: 445px;
     border-radius: 4px;
     box-shadow: inset 1px 1px 4px #999;
 }
-.novidades {
+#index .novidades {
     float: left;
     background-color: #f5dcdc;
     background: linear-gradient(#f5dcdc, #bebef4);
 }
-.mais-vendidos {
+#index .mais-vendidos {
     float: right;
     background-color: #dcdcf5;
     background: linear-gradient(#dcdcf5, #f4bebe);
 }
-.painel li {
+#index .painel li {
     display: inline-block;
     vertical-align: top;
     width: 140px;
@@ -301,17 +292,17 @@ header {
 }
 
 
-.painel li:hover {
+#index .painel li:hover {
     box-shadow: 0 0 5px #333;
     transition: box-shadow 1s;
     transform: scale(1.2) rotate(-5deg);    
 }
-.painel li:nth-child(2n):hover {
+#index .painel li:nth-child(2n):hover {
     box-shadow: 0 0 5px #333;
     transition: box-shadow 1s;
     transform: scale(1.2) rotate(5deg);    
 }
-.painel h2 {
+#index .painel h2 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
@@ -319,61 +310,9 @@ header {
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
     
 }
-.painel a {
+#index .painel a {
     color:#333;
     font-size: 14px;
     text-align: center;
     text-decoration: none;
-}
-@media screen {
-    body {
-        font-size: 16px;
-        margin: auto;
-    }
-       
-}
-
-@media (max-width:939px) {
-    body {
-        font-size: 12px;
-        margin: 0;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        flex-wrap: wrap;
-    }
-    header h1 {
-        text-align: center;
-    }
-    header h1 img {
-        max-width: 50%;
-    }
-    .sacola {
-        display: none;
-    }
-    .menu-opcoes {
-        position: static;
-        text-align: center;
-    }
-    .menu-opcoes ul li{
-        display: inline-block;
-        margin: 5px;
-    }
-    .busca,
-    .menu-departamentos,
-    .banner-destaque img {
-        margin-right: 0;
-        width: 100%;
-    }
-    .painel {
-        width: auto;
-    }
-    .painel li {
-        width: 30%;
-    }
-    .painel img {
-        width: 100%;
-    }
 }
