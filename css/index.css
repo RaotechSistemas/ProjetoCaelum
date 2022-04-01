@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
 
     color: #333;
@@ -30,18 +32,6 @@ body {
 .main-sobre h1 + p {
     text-indent: 0;
 }
-/* -- Alterar 1ª linha--
-
-.main-sobre p::first-line{
-    font-variant: small-caps;
-    
-}
---Alterar apenas a 1ª linha dos parágrafos--
-
-.main-sobre :not(p) + p::first-line{
-    font-variant: small-caps;
-    
-*/
 
 .main-sobre h1 {
     background-image: url(sobre-background.jpg);
@@ -134,7 +124,7 @@ footer .container{
      margin: 0 0 10px 10px;
  }
 
- .main-index .sacola {
+ .sacola {
     background-image: url(sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -181,7 +171,7 @@ footer .container{
      color: #867dc6;
  }
  
- .main-sobre .container {
+ .container {
     margin: 0 auto;
     width: 940px;
 }
