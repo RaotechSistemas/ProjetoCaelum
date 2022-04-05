@@ -32,33 +32,67 @@
     </header>
 
     
-    <div class="produto">
-        <h1>Fuzzy Cardigan</h1>
-        <p>por apenas R$ 129,90</p>
-
-        <form>
-            <fieldset class="cores">
-                <legend>Escolha a cor:</legend>
-    
-                <input type="radio" name="cor" value="verde" id="verde" checked>
-                <label for="verde">
-                    <img src="img/produtos/foto1-verde.png" alt="Produto na cor Verde">
-                </label>
-    
-                <input type="radio" name="cor" value="rosa" id="rosa">
-                <label for="rosa">
-                    <img src="img/produtos/foto1-rosa.png" alt="Produto na cor Rosa">
-                </label>
-    
-                <input type="radio" name="cor" value="azul" id="azul">
-                <label for="azul">
-                    <img src="img/produtos/foto1-azul.png" alt="Produto na cor Azul">   
-                </label>
-    
-            </fieldset>
-            <button class="comprar">Comprar</button>
-        </form>
-
+    <div class="container">
+        <div class="produto">
+            <h1>Fuzzy Cardigan</h1>
+            <p>por apenas R$ 129,90</p>
+            <form>
+                <fieldset class="cores">
+                    <legend>Escolha a cor:</legend>
+        
+                    <input type="radio" name="cor" value="verde" id="verde" checked>
+                    <label for="verde">
+                        <img src="img/produtos/foto1-verde.png" alt="Produto na cor Verde">
+                    </label>
+        
+                    <input type="radio" name="cor" value="rosa" id="rosa">
+                    <label for="rosa">
+                        <img src="img/produtos/foto1-rosa.png" alt="Produto na cor Rosa">
+                    </label>
+        
+                    <input type="radio" name="cor" value="azul" id="azul">
+                    <label for="azul">
+                        <img src="img/produtos/foto1-azul.png" alt="Produto na cor Azul">
+                    </label>
+        
+                </fieldset>
+                <fieldset class="tamanhos">
+                    <legend>Escolha o tamanho</legend>
+                    <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+                </fieldset>
+                <button class="comprar">Comprar</button>
+            </form>
+        </div>
+        <div class="detalhes">
+            <h2>Detalhes do produto</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates voluptatibus fuga ipsum cupiditate qui eum recusandae placeat iste odit voluptas quos, architecto ad eaque. Dolore itaque pariatur illum atque velit?</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caracteristica</th>
+                        <th>Detalhe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>Cardigã 7845</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Algodão e poliester</td>
+                    </tr>
+                    <tr>
+                        <td>Cores</td>
+                        <td>Azul, Rosa e Verde</td>
+                    </tr>
+                    <tr>
+                        <td>Lavagem</td>
+                        <td>Lavar à mão</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <footer>

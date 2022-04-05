@@ -9,6 +9,41 @@
     --cor5: white;
 }
 
+.menu-opcoes {
+    position: static;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul{
+    font-size: 12px;
+
+}
+
+.menu-opcoes a {
+    color: #036;
+    text-decoration: none;
+}
+
+.menu-opcoes ul li {
+    display: inline-block;
+    margin-left: 1px;
+    border-style: solid;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+
+.menu-opcoes a:hover{
+    color:#007dc6;
+}
+.menu-opcoes a:active{
+    color: #867dc6;
+}
+
+
 .produto {
     color: var(--cor0);
     line-height: 1.3;
@@ -46,6 +81,7 @@
 .cores {
     position: relative;
     padding-top: 90px;
+    border: none;
 }
 
 .cores legend {
@@ -101,4 +137,155 @@ label[for=azul]::after {
 }
 .cores input:not(:checked) + label img {
     display: none;
+}
+.detalhes {
+    padding:2em 0;
+}
+.detalhes h2 {
+    font-size: 1.5em;
+    line-height: 2;
+}
+.detalhes p {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 36em;
+}
+table {
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+thead {
+    background-color: #999;
+}
+thead th {
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+}
+td {
+    padding: 0.3em;
+}
+tr:nth-child(2n) {
+    background-color: #ccc;
+}
+td:first-child {
+    font-style: italic;
+}
+
+@media (min-width:630px) {
+    .detalhes {
+        font-size:1.2em;
+    }
+    .container {
+        margin: 0 auto;
+        width: 940px;
+    }
+    .sacola {
+        background-image: url(sacola.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        font-size: 14px;
+        padding-right: 35px;
+        text-align: right;
+        width: 140px;
+        padding-top: 8px;
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+    .produto {
+        position:relative;
+        padding-left: 40%;
+        font-size: 1.2em;
+    }
+    .cores {
+        position: static;
+        padding: 0;
+    }
+    .cores legend {
+        position: static;
+    }
+    .cores label img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 35%;
+        max-height: 100%;
+    }
+    .cores label::after {
+        position: static;
+        float: left;
+        margin-right: 10px;
+    }
+    .menu-opcoes {
+        position: static;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .menu-opcoes ul{
+        font-size: 15px;
+        margin: auto;
+    
+    }
+    
+    .menu-opcoes a {
+        color: #036;
+        text-decoration: none;
+    }
+    
+    .menu-opcoes ul li {
+        display: inline-block;
+        margin-left: 1px;
+        border-style: solid;
+        margin-bottom: 1px;
+        padding: 5px 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+    }
+    
+    .menu-opcoes a:hover{
+        color:#007dc6;
+    }
+    .menu-opcoes a:active{
+        color: #867dc6;
+    }
+    .social a{
+        height:32px;
+        width:32px;
+        display: block;
+        text-indent: -9999px;
+    }
+    .social{
+        position: static;
+        top: 10%;
+        right: 0;
+    }
+    
+    .social a[href*="facebook.com"]{
+        background-image: url(facebook.png);
+    }
+      
+    .social a[href*="twitter.com"]{
+        background-image: url(twitter.png);
+    }   
+    
+    .social a[href*="instagram.com"]{
+        background-image: url(instagram.png);
+        
+    } 
+    
+    .social li{
+        float: left;
+        margin: 0px 10px;
+    }
+    fieldset {
+        display:inline-block;
+        vertical-align: top;
+        margin: 1em 0;
+        min-width: 240px;
+        width: 45%;
+    }
 }
