@@ -1,0 +1,20 @@
+.col-md-1 {
+    background-color: gray;
+}
+
+.col-md-2 {
+    background-color: violet;
+}
+
+.col-md-4 {
+    background-color: brown;
+}
+.col-md-6 {
+    background-color: blue;
+}
+.col-md-8 {
+    background-color: yellow;
+}
+.col-md-12 {
+    background-color: pink;
+}
