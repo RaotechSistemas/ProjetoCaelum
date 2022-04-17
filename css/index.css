@@ -2,7 +2,11 @@
 
 body {
     color: #333;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucita Grande', sans-serif;
+    padding: 10px; /* padding-top, padding-right, padding-bottom, padding-left */
+    margin: auto;
+    min-width: 320px;
+    max-width: 940px;
 }
 
 .container {
@@ -16,21 +20,24 @@ header {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 15px
+    font-size: 15px;
 }
 .menu-opcoes a{
     color: #003366;
+    text-decoration: none;
 }
 .menu-opcoes ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 1px;
+    border-style: solid;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .sacola {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 8px;
+
     background-image: url(../img/sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -38,6 +45,10 @@ header {
     padding-right: 35px;
     text-align: right;
     width: 140px;
+    padding-top: 8px;
+    position:absolute;
+    top: 0;
+    right: 0;
 }
 .busca,
 .menu-departamentos {
@@ -132,10 +143,11 @@ footer {
     display: block;
     text-indent: -9999px;
 }
-.social li {
+.social li{
     float: left;
-    margin-left: 25px;
+    margin: 0px 10px;
 }
+
 .social a [href*="facebook.com"] {
     background-image: url(../img/facebook.png);
 }

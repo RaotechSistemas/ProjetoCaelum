@@ -25,9 +25,6 @@ footer {
     clear: both;
 }
 
-footer .container{
-    position:relative;
-}
 
 footer img {
     margin-right: 30px;
@@ -89,56 +86,15 @@ figcaption {
      width: 550px;
  }
 
-/* Configurações da página INDEX */
 
-.social a{
-    height:32px;
-    width:32px;
-    display: block;
-    text-indent: -9999px;
-}
-.social{
-    position: absolute;
-    top: 10%;
-    right: 0;
-}
 
-.social a[href*="facebook.com"]{
-    background-image: url(facebook.png);
-}
-  
-.social a[href*="twitter.com"]{
-    background-image: url(twitter.png);
-}   
 
-.social a[href*="instagram.com"]{
-    background-image: url(instagram.png);
-    
-} 
-
-.social li{
-    float: left;
-    margin: 0px 10px;
-}
 
 .familia-pelho {
     float:right;
     margin: 0 0 10px 10px;
 }
 
-.sacola {
-    background-image: url(sacola.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    font-size: 14px;
-    padding-right: 35px;
-    text-align: right;
-    width: 140px;
-    padding-top: 8px;
-    position:absolute;
-    top: 0;
-    right: 0;
-}
 
 .menu-opcoes {
     position: absolute;
@@ -156,15 +112,7 @@ figcaption {
     text-decoration: none;
 }
 
-.menu-opcoes ul li {
-    display: inline;
-    margin-left: 1px;
-    border-style: solid;
-    margin-bottom: 1px;
-    padding: 5px 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+
 
 .menu-opcoes a:hover{
     color:#007dc6;
