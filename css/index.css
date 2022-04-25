@@ -1,159 +1,121 @@
-@charset "UTF-8";
-
-body {
-    color: #333;
-    font-family: 'Lucida Sans Unicode', 'Lucita Grande', sans-serif;
-    padding: 10px; /* padding-top, padding-right, padding-bottom, padding-left */
-    margin: auto;
-    min-width: 320px;
-    max-width: 940px;
+html, body, ul, ol, li, form, fieldset, legend
+{
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    margin: 0 auto;
-    width: 940px;
-}
-header {
-    position: relative;
-}
-.menu-opcoes {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 15px;
-}
-.menu-opcoes a{
-    color: #003366;
-    text-decoration: none;
-}
-.menu-opcoes ul li {
-    display: inline;
-    margin-left: 1px;
-    border-style: solid;
-    margin-bottom: 1px;
-    padding: 5px 10px;
-    font-weight: bold;
-    text-transform: uppercase;
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+fieldset,img { border: 0; }
+legend { color: #000; }
+li { list-style: none; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-.sacola {
-
-    background-image: url(../img/sacola.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    font-size: 14px;
-    padding-right: 35px;
-    text-align: right;
-    width: 140px;
-    padding-top: 8px;
-    position:absolute;
-    top: 0;
-    right: 0;
-}
-.busca,
-.menu-departamentos {
-    background-color: #dcdcdc;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 10px;
-    width: 230px;
-    float:left;
-}
-.menu-departamentos {
-    clear: left;
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
-.busca h2,
-.busca form, 
-.menu-departamentos h2 {
-    margin: 10px;
-}
-.busca button {
-    background-image: url(../img/busca.png);
-    background-repeat: no-repeat;
-    border: none;
-    width: 20px;
-    height: 20px;
-    text-indent: -9999px;
-}
-.menu-departamentos li {
-    background-color: white;
-    margin-bottom: 1px;
-    padding: 5px 10px;
-}
-.menu-departamentos a {
-    color: #333;
-    text-decoration: none;
-}
-.busca input [type=search] {
-    width: 170px;
-}
-.destaque {
-    margin-top: 10px;
-}
-.painel {
-    margin: 10px 0;
-    padding: 10px;
-    width: 445px;
-}
-.painel li {
-    display: inline-block;
+caption, th, td
+{
+    text-align: left;
     vertical-align: top;
-    width: 140px;
-    margin: 2px;
-    padding-bottom: 10px;
-}
-.painel h2 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-.painel a {
-    color: #333;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-}
-.novidades {
-    float: left;
-    background-color: #f5dcdc;
-}
-.mais-vendidos {
-    float: right;
-    background-color: #dcdcf5;
-}
-footer {
-    background-image: url(../img/fundo-rodape.png);
-    clear: both;
-    padding: 20px 0;
-}
-.footer .container {
-    position: relative;
-}
-.social {
-    position: absolute;
-    top: 12px;
-    right: 0;
-}
-.social a {
-    height: 32px;
-    width: 32px;
-    display: block;
-    text-indent: -9999px;
-}
-.social li{
-    float: left;
-    margin: 0px 10px;
+    font-weight: normal;
 }
 
-.social a [href*="facebook.com"] {
-    background-image: url(../img/facebook.png);
+input, textarea, select
+{
+    font-size: 110%;
+    line-height: 1.1;
 }
-.social a [href*="twitter.com"] {
-    background-image: url(../img/twitter.png);
+
+abbr, acronym
+{
+    border-bottom: .1em dotted;
+    cursor: help;
 }
-.social a [href*="plus.google.com"] {
-    background-image: url(../img/googleplus.png);
+
+body
+{
+    margin: 20px;
+    color: #000;
+    background: #fff;
+    font: 90%/1.3 "DejaVu Sans", "URW Gothic L", "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav
+{
+    float: left;
+    width: 200px;
+    background: lime;
+}
+
+#content
+{
+    float: left;
+    width: 550px;
+    margin: 0 0 0 25px;
+    background: yellow;
+}
+
+#extras
+{
+    float: right;
+    width: 200px;
+    background: gray;
+}
+
+h1 img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+sacola 
+
+@media screen and (max-width:999px)
+{
+    #container { width: 800px; }
+
+    #extras
+    {
+        clear: left;
+        float: none;
+        margin: 0 0 0 225px;
+        width: 550px;
+    }
+}
+
+@media screen and (max-width:480px)
+{
+    #container { width: 400px; }
+
+    #nav
+    {
+        float: none;
+        width: auto;
+    }
+
+    #content
+    {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    #extras
+    {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    .feature-image { display: none; }
 }
